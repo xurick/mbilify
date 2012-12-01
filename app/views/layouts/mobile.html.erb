@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <%= stylesheet_link_tag 'jquery.mobile', 
+                            'jqm-icon-pack-2.0-original' %>
+    <%= javascript_include_tag 'jquery',
+                               'jquery.mobile' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id='home' data-role='page' data-theme='e'>
+      <div data-role='content' id="primary">
+        <%= yield :logo_img %>
+        <a href='#' data-role='button' data-inline='false' data-icon='phone'>Call Us!</a>
+        <a href='#' data-role='button' data-inline='false' data-icon='mappin'>Find Us!</a>
+
+        <%= yield %>
+
+      </div>
+    </div>
+  </body>
+</html>
+
