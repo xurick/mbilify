@@ -7,8 +7,16 @@ $(document).ready(function () {
         $(this).attr("id", "drag" + count);
         $(this).attr("draggable", "true");
         $(this).attr("ondragstart", "drag(event)");
-        $(this).css("position", "absolute");
         count++;
+    });
+
+    var height = 0;
+    $('#primary').children().each(function () {
+        $(this).css("position", "absolute");
+        $(this).css("top", height);
+        $(this).css("left", 15);
+        var increment = parsePixels($(this).css("height"));
+        height += increment + 10;
     });
 });
 
