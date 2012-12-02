@@ -2,8 +2,8 @@ $iphone_img_url: 'iphone5_320px.png';
 $chrome_img_url: 'chrome_screenshot.PNG';
 
 .mobile {
-  width: 406px;
-  height: 951px;
+  width: 306px;
+  height: 751px;
   background-image: url($iphone_img_url);
   background-size: 100%;
   margin-left:auto;
@@ -29,8 +29,8 @@ iframe.preview {
 
 
 .desktop {
-  width: 900px;
-  height: 400px;
+  width: 700px;
+  height: 600px;
   background-image: url($chrome_img_url);
   background-size: 100% 100%;
   margin-left:auto;
