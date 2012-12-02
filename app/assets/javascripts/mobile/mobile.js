@@ -10,11 +10,18 @@ $(document).delegate('.ui-page', 'pageinit', function () {
   else {
     $(this).css('background', defaultBgColor);
   }
+  
+  $.mobile.defaultPageTransition = "slide";
+
+  $('img').error(function() {
+    this.style.display = 'none';
+  });
+
 });
 
-$(document).ready(function () {
-    edit_page();
-});
+//$(document).ready(function () {
+    //edit_page();
+//});
 
 function edit_page() {
     var count = 1;
