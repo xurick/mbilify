@@ -17,3 +17,4 @@
 //= require init
 //= require walk
 //= require util
+//= require main

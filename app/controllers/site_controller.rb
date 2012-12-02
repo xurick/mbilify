@@ -3,25 +3,26 @@ class SiteController < ApplicationController
 
   def create
     url = params[:url]
-    if Site.find_by_url(url).nil?
-      @site = Site.new(
-        url: url,
-        logo_img: params[:logo],
-        nav_menu: params[:menu],
-        content: params[:content]
-      )
-      if @site.save
-        head :ok
-      else
-        head :bad_request
-      end
+    @site = Site.new(
+      url: url,
+      logo_img: params[:logo],
+      nav_menu: params[:menu],
+      content: params[:content]
+    )
+    if @site.save
+      head :ok
     else
-      @site = Site.find_by_url(url)
+      head :bad_request
     end
-
   end
 
   def show
-    @site = Site.last
+    url = session[:current_url]
+    logger.debug "===== url: #{url}"
+    if url.nil?
+      head :not_found
+    else
+      @site = Site.find_by_url(url+'/')
+    end
   end
 end

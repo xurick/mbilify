@@ -6,6 +6,9 @@ class MainController < ApplicationController
         intent = params[:get]
         url = params[:url]
 
+        reset_session
+        session[:current_url] = url
+
         case intent
 
         when 'markup'

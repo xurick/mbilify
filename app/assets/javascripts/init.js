@@ -54,7 +54,8 @@ var mb = (function(my, $) {
         desktopDoc.close();
       }
 
-    }}
+    }
+  }
 
 return my;
 
