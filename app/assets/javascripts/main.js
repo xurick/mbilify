@@ -69,6 +69,7 @@ $(function () {
         var z = escape("assets/") + y + ".jpg";
         //alert(z);
         $("#websitethumbnail").attr("src", z);
+        $("#mobilethumbnail").attr("src", z);
     }
     );
     $("#action").click(function () {
