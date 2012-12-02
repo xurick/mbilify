@@ -18,6 +18,8 @@ $(document).ready(function () {
         var increment = parsePixels($(this).css("height"));
         height += increment + 10;
     });
+
+    $('#primary').css("height", height);
 });
 
 function allowDrop(ev) {
