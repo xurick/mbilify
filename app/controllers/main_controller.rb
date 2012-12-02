@@ -12,16 +12,19 @@ class MainController < ApplicationController
 
           reset_session
           session[:current_url] = url
+          logger.debug "======== url: #{url}"
 
           # dirty hack adding '/' because the DB url field is populated by using anchor.href
           # which automatically adds the '/'
           if Site.find_by_url(url+'/').nil?
+            logger.debug "======== didn't find site"
             markup_string = open(url).read
             if markup_string.encoding.name != 'UTF-8'
               markup_string.force_encoding('utf-8')
             end
             render :json => JSON.dump(markup_string)
           else
+            logger.debug "======== found site"
             render :json => JSON.dump('')
           end
 
