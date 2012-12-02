@@ -2,15 +2,17 @@
   <%= raw @site.logo_img %>
 <% end %>
 
-<% content_for :nav_menu do %>
+<!--
+<%# content_for :nav_menu do %>
   <ul id='nav' data-role='listview' data-inset='true'>
-    <% for i in 0..3 %>
+    <%# for i in 0..3 %>
         <li>
-          <%= link_to @site.nav_menu[i], '#' %> 
+          <%#= link_to @site.nav_menu[i], '#' %> 
         </li>
-    <% end %>
+    <%# end %>
   </ul>
-<% end %>
+<%# end %>
+-->
 
 <%= raw @site.content %>
 
