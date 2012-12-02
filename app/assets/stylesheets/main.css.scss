@@ -4,8 +4,10 @@ $background_img_url: 'devices.jpg';
 
 #image
 {
-    width: 70%;
-    height: 400px;
+    width: 75%;
+    height: 600px;
+	margin-top: 20px;
+	margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto; 
     background-image: url($background_img_url);
