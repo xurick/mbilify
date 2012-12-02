@@ -1,5 +1,5 @@
 $iphone_img_url: 'iphone5_320px.png';
-$chrome_img_url: 'chrome_screenshot.png';
+$chrome_img_url: 'chrome_screenshot.PNG';
 $background_img_url: 'devices.jpg';
 
 #image
@@ -40,20 +40,21 @@ iframe.preview {
 
 
 .desktop {
-  width: 406px;
-  height: 951px;
+  width: 800px;
+  height: 520px;
   background-image: url($chrome_img_url);
-  background-size: 100%;
+  background-size: 100% 100%;
   margin-left:auto;
   margin-right:auto;
   position:relative;
 
   .desktopscreen {
     position:absolute;
-    top:125px;
-    left:35px;
-    height:595px;
-    width:337px;
+    top:30px;
+    left:0px;
+    height:480px;
+    width:800px;
     border:none;
+	overflow:hidden;
   }
 }
