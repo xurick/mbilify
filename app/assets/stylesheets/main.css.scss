@@ -28,6 +28,26 @@ $background_img_url: 'blur.jpg';
   }
 }
 
+.mobilefront {
+  width: 272.2px;
+  height: 637px;
+  background-image: url($iphone_img_url);
+  background-size: 100%;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+
+  .screenfront {
+    position:absolute;
+    top:125px;
+    left:35px;
+    height:595px;
+    width:337px;
+    border:none;
+  }
+}
+
+
 iframe.preview {
   width:100%;
   height:100%;
