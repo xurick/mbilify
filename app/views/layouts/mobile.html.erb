@@ -13,7 +13,7 @@
   </head>
   <body>
     <div id='home' data-role='page' data-theme='e'>
-      <div data-role='content' id="primary" style="position: relative;" ondrop="drop(event)">
+      <div data-role='content' id="primary" style="position: relative;" ondrop="drop(event)" ondragover="allowDrop(event)">
         <%= yield :logo_img %>
         <a href='#' data-role='button' data-inline='false' data-icon='phone' id='drag1'>Call Us!</a>
         <a href='#' data-role='button' data-inline='false' data-icon='mappin' id='drag2'>Find Us!</a>

@@ -10,11 +10,12 @@ $(document).ready(function () {
         count++;
     });
 
-    var height = 0;
+    var height = 10;
     $('#primary').children().each(function () {
         $(this).css("position", "absolute");
         $(this).css("top", height);
-        $(this).css("left", 15);
+        $(this).css("margin-left", "auto");
+        $(this).css("margin-right", "auto");
         var increment = parsePixels($(this).css("height"));
         height += increment + 10;
     });
