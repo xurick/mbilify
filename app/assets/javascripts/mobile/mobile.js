@@ -17,25 +17,26 @@ $(document).delegate('.ui-page', 'pageinit', function () {
     this.style.display = 'none';
   });
 
-  //edit_page();
 });
+
+//$(document).ready(function () {
+    //edit_page();
+//});
 
 function edit_page() {
     var count = 1;
-    $('#primary').find('img, a, ul').each(function () {
+    var height = 10;
+    $('#primary').children().each(function () {
         $(this).attr("id", "drag" + count);
         $(this).attr("draggable", "true");
         $(this).attr("ondragstart", "drag(event)");
         count++;
-    });
 
-    var height = 0;
-    $('#primary').children().each(function () {
         $(this).css("position", "absolute");
         $(this).css("top", height);
-        $(this).css("left", 15);
-        var increment = parsePixels($(this).css("height"));
-        height += increment + 10;
+        $(this).css("left", 50);
+        var increment = parsePixels($(this).css("height")) + 10;
+        height += increment;
     });
 
     $('#primary').css("height", height);

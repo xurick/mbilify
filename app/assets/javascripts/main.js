@@ -3,6 +3,8 @@
 
 $(function () {
 
+    $("#screen_view").hide();
+
     $("#url_input").change(function () {
         var x = $("#url_input").val();
         //alert(x);
@@ -11,8 +13,13 @@ $(function () {
         var z = escape("assets/") + y + ".jpg";
         //alert(z);
         $("#websitethumbnail").attr("src", z);
+        $("#desktop_iframe").attr("src", x);
+        $("#mobile_iframe").attr("src", x);
+
+        $("#screen_view").show();
     }
     );
+    /*
     $("#action").click(function () {
         var x = $("#url_input").val();
         //alert(x);
@@ -24,5 +31,5 @@ $(function () {
         //alert(z);
         $("#websitethumbnail").attr("src", z);
     }
-    );
+    );*/
 });
