@@ -37,8 +37,8 @@ iframe.preview {
 
 
 .desktop {
-  width: 1000px;
-  height: 520px;
+  width: 768px;
+  height: 393px;
   background-image: url($chrome_img_url);
   background-size: 100% 100%;
   margin-left:auto;
@@ -47,10 +47,10 @@ iframe.preview {
 
   .desktopscreen {
     position:absolute;
-    top:30px;
+    top:20px;
     left:0px;
-    height:480px;
-    width:800px;
+    height:373px;
+    width:768px;
     border:none;
 	overflow:hidden;
   }
