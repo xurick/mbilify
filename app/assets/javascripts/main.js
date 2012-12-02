@@ -26,6 +26,6 @@ $(function () {
 
         //alert(z);
         $("#websitethumbnail").attr("src", z);
-    }*/
-    );
+    }
+    );*/
 });
