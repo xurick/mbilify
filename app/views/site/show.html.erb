@@ -1,3 +1,16 @@
 <% content_for :logo_img do %>
-  <%= image_tag('rails.png') %>
+  <%= raw @site.logo_img %>
 <% end %>
+
+<% content_for :nav_menu do %>
+  <ul id='nav' data-role='listview' data-inset='true'>
+    <% @site.nav_menu.each do |menu_item| %>
+        <li>
+          <%= link_to menu_item, '#' %> 
+        </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= raw @site.content %>
+

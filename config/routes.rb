@@ -1,9 +1,9 @@
 Mb::Application.routes.draw do
-  get "site/create"
+  root to: 'main#index'
+
+  post "site/create"
 
   get "site/show"
-
-  root to: 'main#index'
 
   get "main/index"
 
