@@ -1,5 +1,16 @@
 $iphone_img_url: 'iphone5_320px.png';
 $chrome_img_url: 'chrome_screenshot.PNG';
+$background_img_url: 'devices.jpg';
+
+#image
+{
+    width: 70%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto; 
+    background-image: url($background_img_url);
+    background-repeat: no-repeat;
+}
 
 .mobile {
   width: 406px;
