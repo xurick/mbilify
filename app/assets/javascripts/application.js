@@ -15,3 +15,4 @@
 //= require jquery.url
 //= require bootstrap
 //= require init
+//= require main
