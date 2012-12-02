@@ -11,8 +11,8 @@ $(function () {
         var z = escape("assets/") + y + ".jpg";
         alert(z);
         $("#websitethumbnail").attr("src", z);
-        $("#desktop_iframe").attr("src", z);
-        
+        $("#desktop_iframe").attr("src", x);
+        $("#mobile_iframe").attr("src", x);
     }
     );
     /*
