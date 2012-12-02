@@ -4,7 +4,46 @@ $background_img_url: 'blur.jpg';
 
 .hero-unit
 {
-	background-color: transparent;
+	background-color: rgba(164, 215, 231, 0.31);
+}
+
+#navContainer
+{
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 50px;
+    background-color: Black;
+}
+        
+.container
+{
+    width: 1170px;
+    color: White;
+}
+        
+nav a, nav a:hover
+{
+    text-decoration: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    display: block;
+    color: White;
+}
+        
+#mbilifyLogo
+{
+    float: left;
+    font-size: 24px;
+    padding-top: 13px;
+    padding-right: 13px;
+    padding-bottom: 13px;
+}
+        
+#home
+{
+    float: right;
+    font-size: 16px;
+    padding: 17px;
 }
 
 #background
