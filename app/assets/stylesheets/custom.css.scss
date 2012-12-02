@@ -21,9 +21,9 @@ body {
   background-position:50% top;
   background-color:white;
   color:white;
-  height:480px !important;
+  height:480px;
   text-align:center;
-  margin-top:-21px !important;
+  margin-top:-21px;
   
   h1 {
     margin-top:80px;
@@ -67,8 +67,6 @@ body {
 }
 
 footer {
-  padding:40px 0;
   text-align:center;
-  margin-top:40px;
   color:#777;
 }

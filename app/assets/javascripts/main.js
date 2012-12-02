@@ -5,20 +5,20 @@ $(function () {
 
     $("#screen_view").hide();
 
-    $("#url_input").change(function () {
-        var x = $("#url_input").val();
-        //alert(x);
-        var y = x.substring(11, x.length - 4);
-        //alert(y);
-        var z = escape("assets/") + y + ".jpg";
-        //alert(z);
-        $("#websitethumbnail").attr("src", z);
-        $("#desktop_iframe").attr("src", x);
-        $("#mobile_iframe").attr("src", x);
+    //$("#url_input").change(function () {
+        //var x = $("#url_input").val();
+        ////alert(x);
+        //var y = x.substring(11, x.length - 4);
+        ////alert(y);
+        //var z = escape("assets/") + y + ".jpg";
+        ////alert(z);
+        //$("#websitethumbnail").attr("src", z);
+        //$("#desktop_iframe").attr("src", x);
+        //$("#mobile_iframe").attr("src", x);
 
-        $("#screen_view").show();
-    }
-    );
+        //$("#screen_view").show();
+    //}
+    //);
     /*
     $("#action").click(function () {
         var x = $("#url_input").val();
