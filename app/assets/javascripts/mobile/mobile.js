@@ -10,8 +10,10 @@ $(document).delegate('.ui-page', 'pageinit', function () {
   else {
     $(this).css('background', defaultBgColor);
   }
-  
-  edit_page();
+});
+
+$(document).ready(function () {
+    edit_page();
 });
 
 function edit_page() {
