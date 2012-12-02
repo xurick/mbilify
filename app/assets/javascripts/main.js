@@ -3,6 +3,8 @@
 
 $(function () {
 
+    $("#screen_view").hide();
+
     $("#url_input").change(function () {
         var x = $("#url_input").val();
         //alert(x);
@@ -13,6 +15,8 @@ $(function () {
         $("#websitethumbnail").attr("src", z);
         $("#desktop_iframe").attr("src", x);
         $("#mobile_iframe").attr("src", x);
+
+        $("#screen_view").show();
     }
     );
     /*
