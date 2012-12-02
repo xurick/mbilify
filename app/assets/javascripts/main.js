@@ -9,7 +9,7 @@ $(function () {
         var y = x.substring(11, x.length - 4);
         //alert(y);
         var z = escape("assets/") + y + ".jpg";
-        alert(z);
+        //alert(z);
         $("#websitethumbnail").attr("src", z);
         $("#desktop_iframe").attr("src", x);
         $("#mobile_iframe").attr("src", x);
