@@ -4,9 +4,9 @@
 
 <% content_for :nav_menu do %>
   <ul id='nav' data-role='listview' data-inset='true'>
-    <% @site.nav_menu.each do |menu_item| %>
+    <% for i in 0..3 %>
         <li>
-          <%= link_to menu_item, '#' %> 
+          <%= link_to @site.nav_menu[i], '#' %> 
         </li>
     <% end %>
   </ul>
