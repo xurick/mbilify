@@ -11,7 +11,13 @@ $(document).delegate('.ui-page', 'pageinit', function () {
     $(this).css('background', defaultBgColor);
   }
   
-  edit_page();
+  $.mobile.defaultPageTransition = "slide";
+
+  $('img').error(function() {
+    this.style.display = 'none';
+  });
+
+  //edit_page();
 });
 
 function edit_page() {

@@ -3,6 +3,8 @@ class SiteController < ApplicationController
 
   def create
     url = params[:url]
+    reset_session
+    session[:current_url] = url.sub(/\/$/,'')
     @site = Site.new(
       url: url,
       logo_img: params[:logo],

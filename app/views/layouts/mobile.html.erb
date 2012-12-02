@@ -14,15 +14,20 @@
   </head>
   <body>
     <div id='home' data-role='page' data-theme='e'>
-      <div data-role='content' id="primary" style="position: relative;" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div data-role='content' id="primary">
         <%= yield :logo_img %>
-        <a href='#' data-role='button' data-inline='false' data-icon='phone' id='drag1'>Call Us!</a>
-        <a href='#' data-role='button' data-inline='false' data-icon='mappin' id='drag2'>Find Us!</a>
+        <a href='#' data-role='button' data-inline='true' data-icon='phone'>Call Us!</a>
+        <a href='#' data-role='button' data-inline='true' data-icon='mappin'>Find Us!</a>
         <%= yield :nav_menu %>
 
         <%= yield %>
 
       </div>
+    </div>
+
+    <div id='next' data-role='page' data-theme='a'>
+      <h3>Thanks for previewing your mobile site! Sign up at mbilify.com to finish your mobile make-over!</h3>
+      <a href="index.html" data-role="button" data-icon="star">Sign Up!</a>
     </div>
   </body>
 </html>

@@ -6,17 +6,16 @@ class MainController < ApplicationController
         intent = params[:get]
         url = params[:url]
 
-        reset_session
-        session[:current_url] = url
-
         case intent
 
         when 'markup'
-          logger.debug "==== url: #{url}"
+
+          reset_session
+          session[:current_url] = url
+
           # dirty hack adding '/' because the DB url field is populated by using anchor.href
           # which automatically adds the '/'
           if Site.find_by_url(url+'/').nil?
-            logger.debug "=== does NOT exist"
             markup_string = open(url).read
             if markup_string.encoding.name != 'UTF-8'
               markup_string.force_encoding('utf-8')

@@ -8,6 +8,21 @@ body { padding-top: 60px; }
 @import 'bootswatch/spruce/bootswatch';
 @import 'font-awesome';
 
+.navbar {
+  margin-bottom:0;
+}
+
+.hero-unit {
+  border-radius:0;
+  background-image:url('slide-03.jpg');
+  background-repeat:no-repeat;
+  background-position:50% top;
+  background-color:white;
+  color:white !important;
+  height:300px;
+  text-align:center;
+}
+
 .btn.loading {
   background-image: -webkit-gradient(linear, 0 0, 100% 100%,
   color-stop(.25, rgba(0, 0, 0, .10)), 

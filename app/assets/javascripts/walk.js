@@ -221,10 +221,6 @@ var mb = (function(my, $) {
     // turn relative path into absolute ones
     $('img').each(function() { this.src = this.src; });
 
-    $('img').error(function() {
-      this.style.display = 'none';
-    });
-
     mobilePage.content = content.outerHTML;
 
     return mobilePage;
