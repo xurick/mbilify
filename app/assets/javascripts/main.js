@@ -18,8 +18,8 @@ $(function () {
         //alert(x);
         var y = x.substring(11, x.length - 4);
         //alert(y);
-        //var z = escape("thumbnails/") + y + ".jpg";
-        var z = y + ".jpg";
+        var z = escape("assets/") + y + ".jpg";
+        //var z = y + ".jpg";
 
         //alert(z);
         $("#websitethumbnail").attr("src", z);
